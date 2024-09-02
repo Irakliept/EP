@@ -1,0 +1,423 @@
+body {
+  /* height: 100vh; */
+  background-color: black;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  margin-right: 1rem;
+  letter-spacing: 0.1rem;
+  height: 140vh;
+  font-family: sans-serif;
+
+  /* background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.3) 50%
+    ),
+    url("./assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+
+.underground {
+  max-width: 100%;
+  background-image: url(./assets/SPLASH_IMAGE.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 1rem;
+}
+
+.dark-mode {
+  footer {
+    color: black;
+    background: none;
+  }
+
+  .sub {
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.481);
+  }
+
+  .hardone {
+    background-color: white;
+  }
+
+  background-color: white;
+
+  .main {
+    background: none;
+  }
+
+  .cont3 > *,
+  .cont4 > *,
+  #hide2 {
+    border-bottom: 0.3px solid black;
+  }
+
+  .cont3 * > a,
+  .cont4 * > a {
+    color: black;
+  }
+
+  #hide2 a,
+  i {
+    color: black;
+  }
+
+  .gang > img {
+    opacity: 1;
+  }
+
+  .model h1,
+  p,
+  .btn {
+    color: rgba(0, 0, 0, 0.752);
+  }
+
+  .model .exit {
+    border-bottom: 1px solid black;
+  }
+
+  #logo1 {
+    display: none;
+  }
+
+  #logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .model input {
+    background: transparent;
+    border: none;
+    border: 1px solid black;
+    color: black;
+  }
+  .horizontal {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+
+  .horizontal2 {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+
+  #email {
+    color: black;
+  }
+}
+
+.cont3,
+.cont4 {
+  margin-left: 1rem;
+  font-weight: 50;
+  font-size: 0.7rem;
+  height: 10vh;
+  align-items: center;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.cont3 > *,
+.cont4 > * {
+  padding: 3px;
+  padding-bottom: 15px;
+  flex: 1;
+  border-bottom: 0.3px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont3 * > a,
+.cont4 * > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+i {
+  font-size: smaller;
+  color: #ffffff;
+}
+
+.cont3 > *:hover,
+.cont4 > *:hover {
+  a + i {
+    color: rgba(255, 255, 255, 0.467);
+    transition: 0.5s;
+  }
+}
+
+#hide2 {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .dark-mode {
+    .underground {
+      background-image: url(./assets/noctayellow.png.jpg);
+    }
+  }
+
+  .spacehold {
+    opacity: 0.8;
+  }
+
+  .cont3 {
+    /* margin: 10px;
+    font-weight: 100;
+    font-size: 0.8rem;
+    height: 10vh;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: space-evenly; */
+    /* gap: 1rem; */
+  }
+
+  .cont3 {
+    margin-left: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .cont4 {
+    display: none;
+  }
+
+  #hide2 {
+    display: flex;
+    margin: 7px;
+    font-weight: 100;
+    font-size: 0.7rem;
+    height: 10vh;
+    font-family: sans-serif;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 0.3px solid #ffffff;
+    max-height: 30px;
+  }
+
+  #hide2 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #hide2 * {
+    padding: 3px;
+    padding-bottom: 15px;
+  }
+
+  #hide2 i {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .cont3 > * {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 1rem;
+  }
+
+  .dis {
+    display: none;
+  }
+
+  .model {
+    display: none;
+  }
+
+  #email,
+  .sub {
+    border: none;
+  }
+}
+
+.appear {
+  display: none;
+}
+
+/* .modul {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
+
+#logo1,
+#logo2 {
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+#logo2 {
+  display: none;
+}
+
+.gang > img {
+  width: 80%;
+  height: 90%;
+}
+
+.imp {
+  display: none;
+}
+
+.model h1,
+p,
+.btn {
+  color: rgba(245, 245, 245, 0.625);
+  margin: 5px;
+}
+
+.model input {
+  background: transparent;
+  border: none;
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: purple;
+}
+
+.model .exit {
+  border-bottom: 1px solid whitesmoke;
+  border-radius: 0%;
+  padding-bottom: 2px;
+}
+
+.hardone {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  margin-top: 2.5rem;
+}
+
+.mid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.mid:hover {
+  top: 49%;
+}
+
+.music,
+.music2 {
+  cursor: pointer;
+  position: absolute;
+  bottom: 50%;
+  right: 2%;
+  z-index: 1000;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.horizontal2 {
+  border-top: 1px solid white;
+  opacity: 1;
+}
+
+.horizontal {
+  opacity: 1;
+  border-top: 1px solid white;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.hd {
+  display: none;
+}
+
+.spacehold {
+  height: 80vh;
+  width: 100%;
+}
+
+.fb,
+.insta {
+  font-size: 1.3rem;
+}
+
+.stil {
+  max-width: 100%;
+}
+
+#email {
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-weight: 200;
+  border-top: 1px solid rgba(255, 255, 255, 0.338);
+  padding: 0.7rem 9rem;
+  margin-bottom: 0.8rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.sub {
+  font-size: 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  margin-bottom: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.701);
+  padding: 0.7rem 10rem;
+  text-align: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* .cont3 i,
+.cont4 i {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.251);
+} */
+
+footer {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.3) 50%
+    ),
+    url("./assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  font-size: 0.7rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
